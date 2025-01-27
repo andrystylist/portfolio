@@ -1,319 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!doctype html>
-<html lang="en" data-bs-theme="auto">
-  <head><script src="/js/color-modes.js"></script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Andry Peña | Full Stack Developer</title>
+  <link rel="icon" href="./assets/img/favicon-portfolio.ico">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Fonts Awesome -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.122.0">
-    <title>Carousel Template · Bootstrap v5.3</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="assets/library/animate.min.css" />
+  <!-- AOS -->
+  <link href="assets/library/aos.css" rel="stylesheet">
+  <!-- Owl Carrousel -->
+  <link rel="stylesheet" href="assets/library/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="assets/library/owl.theme.default.min.css" type="text/css">
+  <!-- FullPage JS -->
+  <link rel="stylesheet" href="assets/library/fullpage.min.css">
+  <!-- Emojis -->
+  <link rel='stylesheet' href='assets/library/emoji.min.css'>
+  <!-- Venobox -->
+  <link rel='stylesheet' href='assets/library/venobox.css'>
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/hamburgers.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/new.css">
+  <!-- COLOR -->
+  <meta name="theme-color" content="#ec0f4e">
+  <meta name="msapplication-navbutton-color" content="#ec0f4e">
+  <meta name="author" content="Andry Peña - Desarrolladora Web">
+  <meta name="generator" content="HTML 5, CSS 3, Javascript, java, ">
+  <meta name="keywords" content="Backend, Desarrollo Web, Front-end">
+  <meta name="robots" content="index, follow">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Andry">
+  <meta itemprop="description" content="Desarrollador web">
+  <!-- Twitter Card data -->
+  <meta name="x:card" content="summary_large_image">
+  <meta name="x:site" content="@andrystylist">
+  <meta name="x:title" content="Andry Peña - Desarrolladora Web">
+  <meta name="x:description" content="Desarrolladora web">
+  <meta name="x:creator" content="@">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Andry Peña - Desarrolladora Web" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ddweb.netlify.com/" />
+  <meta property="og:description" content=" Desarrolladora de aplicaciones web" />
+  <meta property="og:site_name" content="Andry Peña - Desarrolladora Web" />
+</head>
+<body id="layer" data-spy="scroll" data-target="#navbar-example2">
+  <style>
+    body {
+      position: relative;
+    }
+  </style>
+  <div id="particles-js"></div>
+  <!--Menu-->
+  <header>
+    <nav id="navbar-example2" class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img class="logo-clou" src="https://res.cloudinary.com/dq66wlb15/image/upload/c_scale,h_70,w_70/v1737909974/A_p__6_-removebg-preview_zrbzbr.png"
+              alt=""></a>
+        </div>
+        <div class="button-menu-responsive">
+          <a href="#menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </a>
+        </div>
+        <!-- Menu -->
+        <div id="menu" class="">
+          <ul class="pt-3 mt-5 mb-5 text-right">
+            <li class="nav-item"><a class="nav-link active" data-scroll href="#section1" class="">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section2" class="">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section3" class="">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section4" class="">Formación</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section5" class="">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section6" class="">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section7" class="">Contacto</a></li>
+            <li class="nav-item mt-3"><a class="btn btn-principal btn-rounded"
+                href="https://wa.me/573212067631?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20"
+                target="_blank" value="Reserva pedido">Escribeme <i class="fab fa-whatsapp ml-2"
+                  style="font-size: 1.3em;"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="navbarNav" class="collapse navbar-collapse container animate__animated animate__fadeIn mt-5 mt-xl-0">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item ml-0">
+              <a class="nav-link active" data-scroll href="#section1">Home</a>
+            </li>
+            <li class="nav-item ml-0">
+              <a class="nav-link" data-scroll href="#section2">Sobre mí</a>
+            </li>
+            <li class="nav-item ml-0">
+              <a class="nav-link" data-scroll href="#section3">Habilidades</a>
+            </li>
+            <li class="nav-item ml-0">
+              <a class="nav-link" data-scroll href="#section4">Formación</a>
+            </li>
+            <li class="nav-item ml-0">
+              <a class="nav-link" data-scroll href="#section5">Experiencia</a>
+            </li>
+            <li class="nav-item ml-0">
+              <a class="nav-link" data-scroll href="#section6">Portafolio</a>
+            </li>
+            <li class="nav-item ml-0">
+              <a class="nav-link" data-scroll href="#section7">Contacto</a>
+            </li>
+            <li class="nav-item ml-2">
+              <div class="ml-3">
+                <a href="https://wa.me/573212067631?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20"
+                  target="_blank" style="text-decoration: none;" class="">
+                  <div class="media btn-rrss">
+                    <i class="fab fa-whatsapp icon-wsp"></i>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="section1" class="section-hero">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-12 text-center">
+            <h1 class="titulo-hero animate__animated animate__fadeIn">Andry Peña</h1>
+            <h3 class="subtitulo animate__animated animate__fadeIn">Desarrolladora Full-Stack</h3>
+            <a class="btn btn-principal2 btn-rounded animate__animated animate__fadeIn" data-scroll href="#section2">Conocer más</a>
+          </div>
+        </div>
+      </div>
+      <div class=" container d-none">
+        <div class="row justify-content-start mb-xl-0 mt-xl-5 pt-xl-5 mt-lg-5">
+          <div class="col-lg-10 text-left pb-5">
+            <div class="box-text" style="min-height: 150px !important;">
+              <p class="lead animate__animated animate__fadeIn mt-xl-3">
+              <h4 class="display-5">Bienvenido<span class="ec ec-wave ml-3" style="font-size: 1.3em;"></span></h4>
+              </p>
+              <h4 class="typewrite title-section animate__animated animate__fadeIn" data-period="2000"
+                data-type='[ "Hola, que tal ?", "Soy Andry Peña !", "Desarrolladora Backend", "Desarrolladora Front-end.", "I Love to Develop <3" ,"Young creative by the web!"]'>
+              </h4>
+            </div>
+          </div>
+          <div class="col-lg-1 ml-auto">
+            <div class="container d-block d-lg-none mt-0 mt-5 pt-5 p-5 p-sm-5 pt-sm-5">
+              <div class="row justify-content-center">
+                <div class="col-4 col-md-2">
+                </div>
+                <div class="col-4 col-md-2">
+                  <a href="https://github.com/andrystylist" style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-0">
+                      <i class="fab fa-github icon-rrss2"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4 col-md-2">
+                  <a href="https://www.linkedin.com/in/andrycarolinape%C3%B1avillamizar/" style="text-decoration: none;"
+                    class="">
+                    <div class="media mb-xl-4">
+                      <i class="fab fa-linkedin icon-rrss2"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container d-none d-lg-block" data-aos="fadeIn" data-aos-duration="3000">
+              <a href="https://github.com/andrystylist" style="text-decoration: none;" class="">
+                <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-5">
+                  <i class="fab fa-github icon-rrss2"></i>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/andrycarolinape%C3%B1avillamizar/" style="text-decoration: none;"
+                class="">
+                <div class="media mb-xl-5 mt-xl-4 ml-1">
+                  <i class="fab fa-linkedin icon-rrss2"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="section-sobremi">
+      <div class="container">
+        <div class="row justify-content-center my-5 pt-5">
+          <div class="col-12 mb-xl-0 pt-0 mt-0 mb-5 text-center">
+            <h1 class="title-section" data-aos="fade-up" data-aos-duration="900" data-aos-offset="60">
+              Sobre mí</h1>
+          </div>
+          <div class="col-xl-7 mt-xl-5 pt-xl-2" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+            <div class="row mb-xl-0 mt-xl-0">
+              <div class="col-12">
+                <div class="box-text">
+                  <p class="font-weight-normal text-responsive-center">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+                    Mujer-Profesional con más de 1 año de experiencia en el área de desarrollo de software, aplicaciones web, me apasiona construir soluciones backend robustas para productos digitales innovadores y todo lo relacionado con la lógica y la arquitectura de software, manejo de datos utilizando bases de datos o consumo y desarrollo de API's para los servicios del lado del servidor.
 
-    
+                  </p>
+                  <p class="font-weight-normal text-responsive-center">
+                    Cuando tengo momentos de bloqueos, mi solución siempre está en el baile, es donde encuentro la mayor concentración y bienestar me encanta decir “baila mientras puedas”. Combino mi amor por el maquillaje con la innovación digital para crear y diseñar páginas web con marcas únicas.
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+                  </p>
+                  <div class="row justify-content-center mt-xl-2 mt-md-3">
+                    <div class="col-2 col-md-1">
+                      <span class="ec ec-computer" style="font-size: 3.0em;"></span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                      <span class="ec ec-dancer" style="font-size: 3.0em;"></span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                      <span class="ec ec-100" style="font-size: 3.0em;"></span>
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="row mt-xl-5 mb-5 mt-xl-0 mt-xl-0 pt-xl-5 mt-3 pt-3">
+              <div class="buttons-about mt-xl-0 mx-auto">
+                <a href="https://res.cloudinary.com/dq66wlb15/image/upload/v1737910762/CV-Andry-Pen%CC%83a-editado.docx_pkqjj5.pdf" target="_blank" class="btn btn-principal btn-rounded" data-aos="fade-up"
+                  data-aos-duration="900" data-aos-offset="90">Descargar CV</a>
+                <a class="btn btn-secondary btn-rounded ml-3" data-aos="fade-up" data-aos-duration="900"
+                  data-aos-offset="90" data-scroll href="#section7">Contactar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section3" class="section-services">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 mt-2 mb-xl-5">
+            <div class="row mt-xl-5 pt-xl-5">
+              <div class="col-12 mb-xl-0 pt-0 mt-0 mb-5 text-center">
+                <h1 class="title-section" data-aos="fade-up" data-aos-duration="900" data-aos-offset="60">
+                  Habilidades</h1>
+              </div>
+              <div class="col-xl-4 col-md-0 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900"
+                data-aos-offset="100">
+                <div class="media">
+                  <i class="fas fa-server mr-3 " style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <h3 class="display-5">Backend</h3>
+                    <p class=" font-weight-normal">Desarrollo de API's y servicios de procesos de negocio en el
+                      servidor.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-0 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900"
+                data-aos-offset="150">
+                <div class="media">
+                  <i class="fas fa-database mr-3 " style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <h3 class="display-5">Base de Datos</h3>
+                    <p class=" font-weight-normal">Diseño y gestión de bases de datos relacionales y NoSQL
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-0 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900"
+                data-aos-offset="200">
+                <div class="media">
+                  <i class="fas fa-brain mr-3 " style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <h3 class="display-5">Front-end</h3>
+                    <p class=" font-weight-normal">Desarrollo de la lógica e interacción con la experiencia del usuario.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row pt-xl-5 mt-xl-0 mt-3">
+              <div class="col-12 mb-xl-0 pt-0 mt-0 mb-5 text-center">
+                <h1 class="title-section" data-aos="fade-up" data-aos-duration="900" data-aos-offset="60">
+                  Tecnologías</h1>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5 mt-xl-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-java mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">Java</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5 mt-xl-5" data-aos="fade-up">
+                <div class="media">
+                  <i class='bx bxl-spring-boot mr-3 tech-icon'></i>
+                  <div class="media-body">
+                    <p class="">Spring</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5 mt-xl-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-python mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body ml-3">
+                    <p class="">Python</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-node mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">Node JS</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%">20%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <span class="mr-3" style="font-size: 2.0em;">ex</span>
+                  <div class="media-body">
+                    <p class="">Express JS</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class='bx bxl-postgresql mr-3 tech-icon'></i>
+                  <div class="media-body">
+                    <p class="">PostgreSQL</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-html5 mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">HTML5 </p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-css3-alt mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">CSS3</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-js mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">JavaScript</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-bootstrap mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">Bootstrap</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-sass mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">Sass</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-react mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">React JS</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%">35%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-github mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">Github</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-git-alt mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">Git</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-12 col-sm-6 mb-5" data-aos="fade-up">
+                <div class="media">
+                  <i class="fab fa-figma mr-3" style="font-size: 2.0em;"></i>
+                  <div class="media-body">
+                    <p class="">Figma</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%">10%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<link href="/styles/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <div class="row pt-xl-5 mt-xl-0 mt-3">
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
+      #layer {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
+        height: 100%;
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="styles/carousel.css" rel="stylesheet">
-  </head>
-  <body>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
-
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
-    
-<header data-bs-theme="dark">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<main>
-
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+    <section id="section4" class="section-experiencia">
+      <div class="container">
+        <div class="row mb-xl-5">
+          <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-0 text-center">
+            <h1 class="title-section" data-aos="fade-up" data-aos-duration="900" data-aos-offset="60">Formación</h1>
+          </div>
+        </div>
+        <div class="row mt-xl-5 pt-xl-5 mt-5 pt-5">
+          <div class="col-xl-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 mb-5 ">
+                  <div class="main-timeline" data-aos="fade-up">
+                    <a href="#" class="timeline" data-aos="fade-up">
+                      <div class="timeline-icon"><i class="fas fa-cog"></i></div>
+                      <div class="timeline-content">
+                        <small>2005-2011</small>
+                        <h3 class="">Ingeniería Ambiental</h3>
+                        <h3 class="title">Universidad Nacional Experimental del Táchira UNET , Táchira, Venezuela</h3>
+                        <p class="description">
+                          La tecnología juega un papel fundamental en la ingeniería ambiental. Las herramientas tecnológicas permiten a los ingenieros ambientales:
+                        <p class="description">
+                          - Monitorear y analizar datos ambientales: Sensores, drones y sistemas de información geográfica (SIG)
+                          -Gestionar la información: Las bases de datos y los sistemas de gestión de información ambiental permiten almacenar, analizar y compartir grandes cantidades de datos.
+                        </p>
+                          
+                        </p>
+                      </div>
+                    </a>
+                    <a href="#" class="timeline" data-aos="fade-up">
+                      <div class="timeline-icon"><i class="fa fa-code"></i></div>
+                      <div class="timeline-content">
+                        <small>May-2023- Sep-2023</small>
+                        <h3 class="">Desarrollador Full-Stack</h3>
+                        <h3 class="title">Make It Real, Bogotá, Colombia</h3>
+                        <p class="description">
+                          Como desarrolladora web egresada, adquirí conocimientos desde los fundamentos de la programación hasta frameworks modernos, sólidas bases técnicas como: HTML, CSS, JavaScript, React, Python, Node.js, Express, PostgreSQL. y desarrollo de habilidades blandas como la resolución de problemas y el trabajo en equipo.
+                        </p>
+                      </div>
+                    </a>
+                    <a href="#" class="timeline" data-aos="fade-up">
+                      <div class="timeline-icon"><i class="fa fa-code"></i></div>
+                      <div class="timeline-content">
+                        <small>Nov-2024- Feb-2025</small>
+                        <h3 class="">Desarrollador Java Full-Stack</h3>
+                        <h3 class="title">Generation Colombia, Bogotá, Colombia</h3>
+                        <p class="description">
+                          Formación práctica e intensiva en desarrollo web. A través de proyectos reales y colaborativos, adquirí habilidades en tecnologías como Java, spring-boot, HTML, JavaScript, Figma. La metodología de aprendizaje centrada en proyectos me permitió desarrollar un pensamiento crítico y una capacidad de resolución de problemas que son fundamentales en el mundo de la tecnología."
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+    </section>
+    <section id="section5">
+      <div class="container">
+        <div class="row mb-xl-5">
+          <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-0 text-center">
+            <h1 class="title-section" data-aos="fade-up" data-aos-duration="900" data-aos-offset="60">
+              Experiencia</h1>
+          </div>
+        </div>
+        <div class="row mt-xl-5 pt-xl-5 mt-5 pt-5">
+          <div class="col-md-12 mb-5 ">
+            <div class="main-timeline" data-aos="fade-up">
+              <a href="#" class="timeline" data-aos="fade-up">
+                <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                <div class="timeline-content">
+                  <small>2022</small>
+                  <h3 class="">Desarrollador Jr Full-Stack</h3>
+                  <h3 class="title">Freelance</h3>
+                  <p class="description">                  
+                      Diseño y desarrollo de una de las páginas principales del hotel - el detalle de cada una de las habitaciones
+                      Implementación de validación de formularios para asegurar la calidad de los datos ingresados.
+                      Creación de endpoints para gestionar las solicitudes del frontend como obtener información de habitaciones.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="timeline" data-aos="fade-up">
+                <div class="timeline-icon"><i class="fa fa-code"></i></div>
+                <div class="timeline-content">
+                  <small>Ene-2022  Oct-2022</small>
+                  <h3 class="">Scouting
+                  </h3>
+                  <h3 class="title">Freelance
+                  </h3>
+                  <p class="description">
+                    Evalué y presenté una cantidad estimada semanal de perfiles IT. Para ello, debía conocer el mercado laboral de la empresa, así como sus necesidades, requisitos y salarios.
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="timeline" data-aos="fade-up">
+                <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                <div class="timeline-content">
+                  <small>Ene-2012 Enero-2014</small>
+                  <h3 class="">Coordinadora de Campo
+                  </h3>
+                  <h3 class="title">Manorta
+                  </h3>
+                  <p class="description">
+                    Desarrollé e implementé programas de mejora continua para el relleno sanitario.
+                    Realicé 2 reuniones mensuales con el Ministerio de Ambiente para presentar las mejoras evidentes aplicando estrategias para lograr el rendimiento adecuado.
+                    Implementé un programa de reciclaje junto con los recolectores de residuos, recuperando más de 60 toneladas de residuos por año.
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+    </section>
+ 
+    <section id="section7" class="contact-form">
+      <div class="container">
+        <div class="row mt-5 mt-xl-5">
+          <div class="col-12 pt-xl-2 mt-xl-2 mb-xl-0 pt-0 mt-0 mb-5">
+            <h1 class="title-section text-center" data-aos="fade-up" data-aos-duration="900" data-aos-offset="60">
+              Contacto</h1>
           </div>
         </div>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      <div class="container">
+        <div class="row justify-content-between mt-xl-5 pt-xl-2 mb-xl-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-xl-6 col-lg-6 mb-xl-0 mb-5 py-2">
+            <div class="card-transparent bg-contact bg-gradiente">
+              <div class="card-body">
+                <div class="container">
+                  <div class="row justify-content-end">
+                    <div class="col-12 text-right">
+                      <a href="https://wa.me/573212067631?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20"
+                        target="_blank" style="text-decoration: none;" class="">
+                        <div class="media btn-rrss">
+                          <i class="fab fa-whatsapp icon-rrss" style="font-size: 3.0em; color:#fff;"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between mt-5 mb-1">
+                    <div class="col-12">
+                      <form class="form form-validate text-secondary" onsubmit="return myFunction(); "
+                        id="formContactanos" novalidate="novalidate">
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Nombre y apellidos</label>
+                          <input id="nombre" name="nombre" type="text" class="form-control" placeholder="" required=" ">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Correo Electrónico</label>
+                          <input id="email" name="email" type="email" class="form-control" placeholder="" required=" ">
+                        </div>
+                        <div class="form-group">
+                          <label for="asunto">Asunto</label>
+                          <select id="asunto" name="asunto" class="form-control" required=" ">
+                            <option>Pagina web</option>
+                            <option>Oferta Laboral</option>
+                            <option>Otros...</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Mensaje</label>
+                          <textarea id="mensaje" class="form-control" name="mensaje" rows="3 " placeholder="..."
+                            required=" "></textarea>
+                        </div>
+                        <div class="form-group mt-xl-5 d-flex justify-content-center">
+                          <button id="btn_contactanos" class="btn btn-principal btn-rounded">Enviar mensaje</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5 mt-lg-5">
+            <div class="container">
+              <a href="https://github.com/andrystylist" target="_blank" style="text-decoration: none;" class="">
+                <div class="media mb-xl-4 mt-xl-5 pt-xl-4 mb-3 mt-2 btn-rrss">
+                  <i class="fab fa-github icon-rrss" style="font-size: 3.0em; color:#fff;"></i>
+                  <div class="media-body mt-xl-1 ml-4">
+                    <h3 class="display-5" style="color:#141414;">GitHub</h3>
+                    <p class="" style="color:#141414;">andrystylist</p>
+                  </div>
+                </div>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/andrycarolinape%C3%B1avillamizar/" target="_blank"
+                style="text-decoration: none;" class="">
+                <div class="media mb-xl-4">
+                  <i class="fab fa-linkedin icon-rrss" style="font-size: 3.0em; color:#fff;"></i>
+                  <div class="media-body mt-xl-1 mb-3 ml-4">
+                    <h3 class="display-5" style="color:#141414;">LinkeIn</h3>
+                    <p class="" style="color:#141414;">Andry Carolina Peña</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+    </section>
+    <footer class="fdb-block footer-small bg-footer">
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <p class="text-light lead my-4">Andry Peña © - 2025</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-    <hr class="featurette-divider">
+  <!-- Particles js-->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="assets/js/particle.js"></script>
+  <script src="assets/library/aos.js"></script>
+  <!--FullPage JS-->
+  <script src="assets/library/fullpage.min.js"></script>
+  <!-- OWl carousel-->
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="assets/library/owl.carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/contact/contact.js"></script>
+  <script src="assets/library/isotope.pkgd.min.js"></script>
+  <script src="assets/library/venobox.min.js"></script>
+  <!-- Smooth-Scroll -->
+  <script src="assets/js/smooth-scroll.min.js"></script>
+  <!-- SweetAlert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+  <script>
+    smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 2500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function (anchor, toggle) { } // Function to run after scrolling
+    });         
+  </script>
+</body>
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
 
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
-</main>
-<script src="/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    </body>
 </html>
