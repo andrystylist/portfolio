@@ -148,9 +148,9 @@
     /* padding: 110px 0px; */
     
     width: 100%;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.611)), url(../img/wire.png);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.604)), url(../img/wire.png);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30;  fallback for old browsers
+    /* background: -webkit-linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.611)), url(../img/wire.png);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.604));  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -955,8 +955,8 @@ header{
     }
 
     .section-works {
-        background: -webkit-linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.611)), url(../img/wireres.png);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.604)), url(../img/wireres.png);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.611)), ;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.604)), ;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
